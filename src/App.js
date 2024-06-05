@@ -4,7 +4,7 @@ import Content from './Content';
 import './App.css';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('Pagina Principal');
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);

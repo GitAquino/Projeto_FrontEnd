@@ -4,11 +4,11 @@ const Sidebar = ({ activeTab, onTabChange }) => {
   return (
     <div className="sidebar">
       <a
-        className={activeTab === 'home' ? 'active' : ''}
-        href="#home"
-        onClick={() => onTabChange('home')}
+        className={activeTab === 'Pagina Principal' ? 'active' : ''}
+        href="#Pagina Principal"
+        onClick={() => onTabChange('Pagina Principal')}
       >
-        Home
+        Pagina Principal
       </a>
       <a
         className={activeTab === 'about' ? 'active' : ''}
