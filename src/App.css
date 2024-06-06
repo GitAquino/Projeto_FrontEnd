@@ -6,16 +6,18 @@ body {
 
 .App {
     display: flex;
+    height: 100vh;
 }
 
 .sidebar {
     height: 100vh;
-    width: 200px;
+    width: 230px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #111;
-    padding-top: 20px;
+    padding-top: 10px;
+    border-right: 1px solid rgb(10, 242, 211);
 }
 
 .sidebar a {
@@ -23,7 +25,8 @@ body {
     text-decoration: none;
     font-size: 13px;
     color: white;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar a:hover {
@@ -36,15 +39,56 @@ body {
     color: white;
 }
 
-.content {
-    margin-left: 205px;
-    padding: 16px;
-    width: 100%;
+.icon{
+    margin-right: 10px;
+    font-size: 23px;
 }
+
+.perfil {
+    padding-bottom: 10px;
+    color: #ffffff;
+    display: block;
+    height: 110px;
+    border-bottom: 1px solid rgb(10, 242, 211);
+    display: flex;
+    align-items: center;
+}
+
+.perfil-foto{
+    background-image: url("../public/2020-05-09t000000z-1874358627-rc25lg9vwuf5-rtrmadp-3-health-coronavirus-tesla.webp");
+    border-radius: 50%;
+    height: 85px;
+    object-fit: cover;
+    width: 85px;  
+    margin-left: 10px;
+  }
+
+#perfil-nome{
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+/* .opcoes {
+    margin-top: 50%;
+} */
+
+
+.content {
+    margin-left: 230px; 
+    padding: 16px;
+    width: calc(100% - 230px);
+    height: 100vh; 
+    overflow-y: auto; 
+    background-color: #575757;
+    color: #ffffff;
+}
+
+
 
 @media screen and (max-height: 450px) {
     .sidebar {
-        padding-top: 15px;
+        padding-top: 150px;
     }
 
     .sidebar a {

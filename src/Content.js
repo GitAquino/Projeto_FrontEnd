@@ -5,12 +5,12 @@ const Content = ({ activeTab }) => {
     switch (activeTab) {
       case 'Pagina Principal':
         return <div>Conteúdo da página inicial.</div>;
-      case 'about':
-        return <div>Conteúdo sobre nós.</div>;
-      case 'services':
-        return <div>Conteúdo dos serviços.</div>;
-      case 'contact':
-        return <div>Conteúdo de contato.</div>;
+      case 'Meu Perfil':
+        return <div>Conteúdo do Meu Perfil.</div>;
+      case 'Minhas Candidaturas':
+        return <div>Conteúdo das Minhas Candidaturas.</div>;
+      case 'Mensagens':
+        return <div>Minhas Mensagens.</div>;
       default:
         return null;
     }
